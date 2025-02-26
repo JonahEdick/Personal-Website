@@ -1,10 +1,13 @@
 'use client';
 import Container from 'react-bootstrap/Container';
+import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Component } from "react";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Logo from "../../public/logo.svg?react";
+import Image from 'next/image';
 class NavigationBar extends Component{
 
     constructor(props){
@@ -43,9 +46,14 @@ class NavigationBar extends Component{
 
     render(){
         return(
-            <Navbar expand="lg" className="bg-body-tertiary" sticky='top'>
+            <Navbar expand="lg" className="NavigationBar" sticky='top'>
                 <Container>
-                    <Navbar.Brand href="/">Jonah C. Edick</Navbar.Brand>
+                    <Navbar.Brand href="/" className='Brand'>
+                    <Image
+                        src={Logo}
+                        height={50}
+                    />
+                    </Navbar.Brand>
                     <Navbar.Toggle
                         aria-controls="basic-navbar-nav"
                         onClick={() => {this.expanded()}}
@@ -54,16 +62,25 @@ class NavigationBar extends Component{
                     <Nav
                         className="me-auto"
                     >
-                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link 
+                            href="/"
+                            className="NavLink"
+                        >Home</Nav.Link>
                         <NavDropdown
-                            title="Internships"
+                            title={
+                                <text className="NavLink">Internships</text>
+                            }
                             id="basic-nav-dropdown"
                             show={this.state.internDropdown}
                             onMouseEnter={() => {this.interact(true)}}
                             onMouseLeave={() => {this.interact(false)}}
                             onClick={() => {this.goto("/internships")}}
+                            menuVariant='dark'
                         >
-                            <Nav.Link href="/internships/chainguard">Chainguard</Nav.Link>
+                            <Nav.Link
+                            href="/internships/chainguard"
+                            className="NavLink"
+                            >Chainguard</Nav.Link>
                         </NavDropdown>
                     </Nav>
                     </Navbar.Collapse>
