@@ -1,6 +1,7 @@
 'use client';
 import { Component } from "react";
 import NavigationBar from "../components/NavigationBar";
+import "../app/globals.css";
 import '../styling/styles.css';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
