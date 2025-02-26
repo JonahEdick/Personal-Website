@@ -1,7 +1,7 @@
 'use client';
 import NavigationBar from "@/components/NavigationBar";
 import { Component } from "react";
-import '../../styling/globals.css';
+import '../../styling/styles.css';
 
 class Chainguard extends Component {
 

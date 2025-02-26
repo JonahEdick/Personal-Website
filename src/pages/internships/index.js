@@ -1,7 +1,7 @@
 'use client';
 import NavigationBar from "@/components/NavigationBar";
 import { Component } from "react";
-import '../../styling/globals.css';
+import '../../styling/styles.css';
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 class Internships extends Component {
