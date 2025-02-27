@@ -7,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Component } from "react";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Logo from "../../public/logo.svg?react";
+import Toggler from "../../public/toggler.svg?react"
 import Image from 'next/image';
 class NavigationBar extends Component{
 
@@ -46,41 +47,81 @@ class NavigationBar extends Component{
 
     render(){
         return(
-            <Navbar expand="lg" className="NavigationBar" sticky='top'>
+            <Navbar expand="lg" className="NavigationBar" sticky='top' variant='dark'>
                 <Container>
                     <Navbar.Brand href="/" className='Brand'>
                     <Image
                         src={Logo}
-                        height={50}
+                        height={75}
                     />
                     </Navbar.Brand>
                     <Navbar.Toggle
                         aria-controls="basic-navbar-nav"
                         onClick={() => {this.expanded()}}
-                    />
+                        style={{border: "#D3BC8D"}}
+                    >
+                        <Image 
+                            src={Toggler}
+                            height={50}
+                        />
+                    </Navbar.Toggle>
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav
                         className="me-auto"
                     >
                         <Nav.Link 
-                            href="/"
+                            href="/about"
                             className="NavLink"
-                        >Home</Nav.Link>
+                        >
+                            About
+                        </Nav.Link>
                         <NavDropdown
                             title={
-                                <text className="NavLink">Internships</text>
+                                <text className="NavLink">Experiences</text>
                             }
                             id="basic-nav-dropdown"
                             show={this.state.internDropdown}
                             onMouseEnter={() => {this.interact(true)}}
                             onMouseLeave={() => {this.interact(false)}}
-                            onClick={() => {this.goto("/internships")}}
+                            onClick={() => {this.goto("/experiences")}}
                             menuVariant='dark'
                         >
                             <Nav.Link
-                            href="/internships/chainguard"
+                            href="/experiences/chainguard"
                             className="NavLink"
-                            >Chainguard</Nav.Link>
+                            >
+                                Chainguard
+                            </Nav.Link>
+                            <Nav.Link
+                            href="/experiences/luminous"
+                            className="NavLink"
+                            >
+                                Luminous Psychiatric
+                            </Nav.Link>
+                            <Nav.Link
+                            href="/experiences/eoptic"
+                            className="NavLink"
+                            >
+                                EOPTIC Inc.
+                            </Nav.Link>
+                        </NavDropdown>
+                        <NavDropdown
+                            title={
+                                <text className="NavLink">Projects</text>
+                            }
+                            id="basic-nav-dropdown"
+                            show={this.state.internDropdown}
+                            onMouseEnter={() => {this.interact(true)}}
+                            onMouseLeave={() => {this.interact(false)}}
+                            onClick={() => {this.goto("/projects")}}
+                            menuVariant='dark'
+                        >
+                            <Nav.Link
+                            href="/projects/tbd"
+                            className="NavLink"
+                            >
+                                TBD Game Studios
+                            </Nav.Link>
                         </NavDropdown>
                     </Nav>
                     </Navbar.Collapse>

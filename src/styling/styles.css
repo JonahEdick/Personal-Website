@@ -28,10 +28,6 @@ text {
   color: #D3BC8D;
 }
 
-.NavigationBar{
-  background-color: 101820;
-}
-
 .Brand{
   color: #D3BC8D;
 }
@@ -45,8 +41,10 @@ text {
 }
 
 div.dropdown-menu.show{
-  background-color: #00000000;
+  background-color: #101820;
   border: #00000000;
+  margin: 10px;
+  width: auto;
 }
 
 .dropdown-toggle:after{
