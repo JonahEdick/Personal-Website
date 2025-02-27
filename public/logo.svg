@@ -7,8 +7,8 @@
    viewBox="0 0 512 512"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    sodipodi:docname="logo.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -26,12 +26,12 @@
      inkscape:document-units="px"
      inkscape:zoom="0.78808594"
      inkscape:cx="206.83024"
-     inkscape:cy="212.54027"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:cy="211.90582"
+     inkscape:window-width="1147"
+     inkscape:window-height="1000"
+     inkscape:window-x="764"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
@@ -39,7 +39,7 @@
        id="linearGradient8"
        inkscape:collect="always">
       <stop
-         style="stop-color:#bea878;stop-opacity:1;"
+         style="stop-color:#bda777;stop-opacity:1;"
          offset="0"
          id="stop8" />
       <stop
@@ -89,23 +89,15 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <circle
-       style="mix-blend-mode:normal;fill:none;stroke:url(#linearGradient7);stroke-width:10;stroke-dasharray:none;stroke-opacity:1"
+    <path
        id="path3"
-       cx="256"
-       cy="256"
-       r="250" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:287.373px;font-family:'Vladimir Script';-inkscape-font-specification:'Vladimir Script';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:url(#linearGradient9);fill-opacity:1;stroke:none;stroke-width:239.473;stroke-dasharray:none;stroke-opacity:1"
-       x="86.544983"
-       y="277.76785"
+       style="fill:none;stroke:url(#linearGradient7);stroke-width:10"
+       d="M 506,256 A 250,250 0 0 1 256,506 250,250 0 0 1 6,256 250,250 0 0 1 256,6 250,250 0 0 1 506,256 Z" />
+    <path
+       d="m 228.40733,249.00249 q 7.01594,0.56128 7.01594,6.7353 0,6.45467 -5.47243,6.45467 -1.26287,0 -1.54351,-0.70159 -0.28064,-0.56128 0,-1.54351 0.28064,-1.40319 0.28064,-1.68383 0,-2.94669 -6.45467,-2.66605 -39.00864,41.39405 -62.72252,61.45965 -46.44554,39.71023 -73.80771,39.71023 -6.454667,0 -10.664232,-4.06925 -4.349884,-4.06924 -4.349884,-10.52391 0,-14.45284 23.994522,-35.7813 21.609104,-19.364 53.321164,-35.50067 32.41365,-16.4173 60.05646,-21.6091 19.64464,-19.64464 59.35487,-70.58038 44.06011,-56.26785 50.37446,-73.80771 2.80638,-7.998173 2.80638,-12.207738 0,-5.332116 -4.77084,-5.332116 -19.08336,0 -60.3371,16.557624 -41.6747,16.69794 -76.05281,46.1649 -34.79908,29.88791 -34.79908,51.49701 0,17.1189 17.96081,17.1189 24.83644,0 60.33711,-19.364 33.11524,-18.10113 40.55214,-35.36035 0.84191,-1.82414 1.82415,-2.38542 3.36765,-0.14032 3.36765,5.47244 0,7.99817 -15.57539,22.45101 -14.8738,13.75125 -40.83279,25.39771 -27.36217,12.20774 -45.88426,12.20774 -13.75124,0 -23.15261,-9.682 -9.26104,-9.82232 -9.26104,-23.71388 0,-26.66058 34.65875,-55.28563 29.7476,-24.55579 73.6674,-42.656924 41.53437,-16.978579 66.93208,-16.978579 21.32847,0 21.32847,16.83826 0,32.974933 -102.15212,153.368493 z m -27.22185,7.57722 q -25.95899,6.7353 -58.65328,25.53803 -33.11525,18.94304 -51.356695,37.88608 -15.435073,15.85603 -15.435073,23.57357 0,7.15626 8.840087,7.15626 7.156261,0 16.557621,-4.4902 13.18997,-6.45467 50.6551,-41.25374 27.78313,-25.81867 49.39224,-48.41 z m 228.15844,-93.31203 q -17.8205,0 -32.83461,-5.89339 -20.0656,-7.85786 -20.0656,-22.73165 0,-23.85421 52.19861,-39.710237 40.55215,-12.207739 72.82548,-12.207739 32.27333,0 32.27333,21.188146 0,11.78678 -23.29292,22.73165 -20.48655,9.682 -34.2378,9.682 -8.55945,0 -8.55945,-7.15626 0,-4.4902 7.15626,-9.26104 6.59499,-4.49021 11.36583,-4.49021 2.80637,0 2.80637,1.96447 0,0.84191 -3.7886,2.80637 -4.34989,2.24511 -5.1918,3.22734 1.26287,1.12255 3.50797,1.12255 7.29658,0 24.41548,-8.27881 18.52209,-8.98041 18.52209,-15.01412 0,-5.612753 -20.34624,-5.612753 -22.73165,0 -54.02275,7.998173 -20.76719,5.47244 -38.30704,12.6287 -28.34441,11.78678 -28.34441,22.03006 0,12.34805 39.14896,17.39953 22.45101,2.9467 49.9535,2.9467 5.61276,0 5.61276,4.20956 0,7.71754 -18.10113,8.55945 -55.14531,2.52574 -105.09881,25.67835 -51.21638,23.71388 -51.21638,47.42777 0,23.15261 39.71023,23.15261 23.71388,0 46.02458,-10.66424 15.01412,-7.15626 29.74759,-19.64463 12.6287,-10.66424 12.90934,-10.66424 3.22733,0 3.22733,7.85786 0,13.04965 -28.90568,29.88791 -28.90568,16.83826 -58.37264,16.83826 -53.74211,0 -53.74211,-42.79724 0,-27.78313 38.16672,-48.12936 25.53803,-13.61093 63.00316,-21.74943 10.52391,-2.66605 31.85238,-5.33211 z"
        id="text6"
-       transform="scale(0.85450271,1.1702713)"><tspan
-         sodipodi:role="line"
-         id="tspan6"
-         x="86.544983"
-         y="277.76785"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Vladimir Script';-inkscape-font-specification:'Vladimir Script';fill:url(#linearGradient9);stroke-width:239.473">JE</tspan></text>
+       style="font-size:287.373px;font-family:'Vladimir Script';-inkscape-font-specification:'Vladimir Script';fill:url(#linearGradient9);stroke-width:239.473"
+       transform="scale(0.85450271,1.1702713)"
+       aria-label="JE" />
   </g>
 </svg>
