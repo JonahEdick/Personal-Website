@@ -15,6 +15,7 @@ class NavigationBar extends Component{
         super(props);
         this.state = {
             internDropdown: false,
+            projectsDropdown: false
         };
         if(typeof window !== "undefined"){
             window.addEventListener("resize", this.handleResize)
@@ -23,13 +24,19 @@ class NavigationBar extends Component{
 
     handleResize = async () => {
         if(window.innerWidth >= 992){
-            this.setState({internDropdown: false});
+            this.setState({
+                internDropdown: false,
+                projectsDropdown: false
+            });
         }else{
-            this.setState({internDropdown: true});
+            this.setState({
+                internDropdown: true,
+                projectsDropdown: true
+            });
         }
     }
 
-    async interact(newState){
+    async hoverExperience(newState){
         if(window.innerWidth >= 992){
             this.setState({internDropdown: newState});
         }else{
@@ -37,12 +44,23 @@ class NavigationBar extends Component{
         }
     }
 
+    async hoverProjects(newState){
+        if(window.innerWidth >= 992){
+            this.setState({projectsDropdown: newState});
+        }else{
+            this.setState({projectsDropdown: true});
+        }
+    }
+
     async goto(url) {
         window.location.href = url;
     }
 
-    async expanded(){
-        this.setState({internDropdown: true})
+    async expanded(statParam){
+        this.setState({
+            internDropdown: true,
+            projectsDropdown: true
+        })
     }
 
     render(){
@@ -81,47 +99,47 @@ class NavigationBar extends Component{
                             }
                             id="basic-nav-dropdown"
                             show={this.state.internDropdown}
-                            onMouseEnter={() => {this.interact(true)}}
-                            onMouseLeave={() => {this.interact(false)}}
+                            onMouseEnter={() => {this.hoverExperience(true)}}
+                            onMouseLeave={() => {this.hoverExperience(false)}}
                             onClick={() => {this.goto("/experiences")}}
                             menuVariant='dark'
                         >
-                            <Nav.Link
+                            <NavDropdown.Item
                             href="/experiences/chainguard"
                             className="NavLink"
                             >
                                 Chainguard
-                            </Nav.Link>
-                            <Nav.Link
+                            </NavDropdown.Item>
+                            <NavDropdown.Item
                             href="/experiences/luminous"
                             className="NavLink"
                             >
                                 Luminous Psychiatric
-                            </Nav.Link>
-                            <Nav.Link
+                            </NavDropdown.Item>
+                            <NavDropdown.Item
                             href="/experiences/eoptic"
                             className="NavLink"
                             >
                                 EOPTIC Inc.
-                            </Nav.Link>
+                            </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown
                             title={
                                 <text className="NavLink">Projects</text>
                             }
                             id="basic-nav-dropdown"
-                            show={this.state.internDropdown}
-                            onMouseEnter={() => {this.interact(true)}}
-                            onMouseLeave={() => {this.interact(false)}}
+                            show={this.state.projectsDropdown}
+                            onMouseEnter={() => {this.hoverProjects(true)}}
+                            onMouseLeave={() => {this.hoverProjects(false)}}
                             onClick={() => {this.goto("/projects")}}
                             menuVariant='dark'
                         >
-                            <Nav.Link
+                            <NavDropdown.Item
                             href="/projects/tbd"
                             className="NavLink"
                             >
                                 TBD Game Studios
-                            </Nav.Link>
+                            </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     </Navbar.Collapse>
