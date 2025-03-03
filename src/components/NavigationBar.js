@@ -65,12 +65,17 @@ class NavigationBar extends Component{
 
     render(){
         return(
-            <Navbar expand="lg" className="NavigationBar" sticky='top' variant='dark'>
+            <Navbar expand="lg" className="NavigationBar" sticky='top' variant='dark'
+                style={{
+                    backgroundColor: "black",
+                    marginBottom: "20px"
+                }}>
                 <Container>
                     <Navbar.Brand href="/" className='Brand'>
                     <Image
                         src={Logo}
                         height={75}
+                        alt='Logo'
                     />
                     </Navbar.Brand>
                     <Navbar.Toggle
@@ -81,6 +86,7 @@ class NavigationBar extends Component{
                         <Image 
                             src={Toggler}
                             height={50}
+                            alt='Toggler'
                         />
                     </Navbar.Toggle>
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -117,10 +123,16 @@ class NavigationBar extends Component{
                                 Luminous Psychiatric
                             </NavDropdown.Item>
                             <NavDropdown.Item
+                            href="/experiences/vuzix"
+                            className="NavLink"
+                            >
+                                Vuzix
+                            </NavDropdown.Item>
+                            <NavDropdown.Item
                             href="/experiences/eoptic"
                             className="NavLink"
                             >
-                                EOPTIC Inc.
+                                EOPTIC
                             </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown

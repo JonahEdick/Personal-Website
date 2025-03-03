@@ -3,15 +3,15 @@ import { Component } from "react";
 import NavigationBar from "../components/NavigationBar";
 import '../styling/styles.css';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import ContentPage from "@/components/ContentPage";
 
 class Home extends Component {
 
     render() {
         return (
             <div>
-                <NavigationBar />
-                <h1>Test Home</h1>
-                <p>This is a test for the home page</p>
+                <NavigationBar/>
+                <ContentPage/>
             </div>
         );
     }

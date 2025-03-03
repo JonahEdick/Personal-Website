@@ -18,6 +18,8 @@ body {
   color: var(--foreground);
   background-image: linear-gradient(#101820, black);
   font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 html{
@@ -38,6 +40,7 @@ text {
 
 #basic-nav-dropdownmenu{
   color: #D3BC8D;
+  background-color: #101820;
 }
 
 div.dropdown-menu.show{
