@@ -113,7 +113,7 @@ class ContentPage extends Component {
                                     }}
                                     xs={12}
                                 >
-                                    Relavent Technologies
+                                    Relevant Technologies
                                 </Col>
                                 {this.technologies.map((number, index) => (
                                     <Col
