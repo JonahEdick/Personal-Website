@@ -2,6 +2,7 @@
 import NavigationBar from "@/components/NavigationBar";
 import { Component } from "react";
 import '../../styling/styles.css';
+import EopticContent from "@/components/companies/EopticContent";
 
 class Eoptic extends Component {
 
@@ -9,8 +10,7 @@ class Eoptic extends Component {
         return (
             <div>
                 <NavigationBar />
-                <h1>Test Eoptic</h1>
-                <p>This is a test for the home page</p>
+                <EopticContent/>
             </div>
         );
     }

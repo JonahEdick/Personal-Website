@@ -6,14 +6,19 @@ import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import Logo from "../../public/logo.svg?react";
 import Image from 'next/image';
-import DockerImg from "../../public/technologies/Docker.png?react"
-import TerraformImg from "../../public/technologies/Terraform.png?react"
-import WolfiImg from "../../public/technologies/Wolfi.png?react"
-
 
 class ContentPage extends Component {
     compLogo = Logo;
-    content = "Lorem ipsum odor amet, consectetuer adipiscing elit. Ex euismod ultricies hendrerit leo malesuada finibus ipsum sapien vivamus. Inceptos cubilia sed sem pulvinar commodo commodo malesuada urna. Pharetra eros etiam ut; placerat ad mus. Felis faucibus diam natoque dictum interdum habitasse aenean aliquet. Egestas commodo conubia faucibus dictumst tristique nisl ullamcorper tortor eget. Sem parturient himenaeos natoque magna ex neque. Ipsum scelerisque erat consequat metus massa a cras.";
+    compInfo = `
+    Lorem ipsum odor amet, consectetuer adipiscing elit.
+    Ex euismod ultricies hendrerit leo malesuada finibus ipsum sapien vivamus.
+    Inceptos cubilia sed sem pulvinar commodo commodo malesuada urna.
+    Pharetra eros etiam ut; placerat ad mus.
+    Felis faucibus diam natoque dictum interdum habitasse aenean aliquet.
+    Egestas commodo conubia faucibus dictumst tristique nisl ullamcorper tortor eget.
+    Sem parturient himenaeos natoque magna ex neque.
+    Ipsum scelerisque erat consequat metus massa a cras.`
+    jobDesc = ``
     technologies = [];
 
     render()  {
@@ -21,18 +26,19 @@ class ContentPage extends Component {
             <Container
                 fluid="md"
                 style={{
-                    paddingBottom: "50px"
+                    paddingBottom: "50px",
+                    paddingLeft: "50px",
+                    paddingRight: "50px"
                 }}
             >
                 <Row>
                     <Col 
                         xs={12}
-                        md={4}
-                        lg={3}
                         style={{
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
+                            paddingBottom: "50px"
                         }}
                     >
                         <Image 
@@ -41,21 +47,38 @@ class ContentPage extends Component {
                             style={{
                                 width: "auto",
                                 height: "auto",
+                                maxHeight: "125px",
                             }}
                         />
+                    </Col>
+                    <Col
+                        xs={12}
+                        md={6}
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "top",
+                            paddingBottom: "50px",
+                        }}
+                    >
+                        <Col>
+                            <div>
+                                {this.compInfo}
+                            </div>
+                        </Col>
                     </Col>
                     <Col
                         style={{
                             display: "flex",
                             justifyContent: "center",
-                            alignItems: "center"
+                            alignItems: "top",
+                            paddingBottom: "50px",
                         }}
                         xs={12}
-                        md={8}
-                        lg={6}
+                        md={6}
                     >
                         <div>
-                            {this.content}
+                            {this.jobDesc}
                         </div>
                     </Col>
                     <Col
@@ -65,8 +88,6 @@ class ContentPage extends Component {
                             alignItems: "center"
                         }}
                         xs={12}
-                        md={12}
-                        lg={3}
                     >
                         <Container
                             fluid="md"
@@ -87,15 +108,15 @@ class ContentPage extends Component {
                                     style={{
                                         display: "flex",
                                         justifyContent: "center",
-                                        alignItems: "center"
+                                        alignItems: "center",
+                                        paddingBottom: "25px",
                                     }}
                                     xs={12}
                                 >
-                                    Relavent technologies
+                                    Relavent Technologies
                                 </Col>
                                 {this.technologies.map((number, index) => (
                                     <Col
-                                        lg={6}
                                         md={2}
                                         xs={6}
                                         
