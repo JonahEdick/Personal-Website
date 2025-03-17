@@ -3,6 +3,7 @@ import Logo from "../../../public/companies/Chainguard.webp?react"
 import DockerImg from "../../../public/technologies/Docker.png?react"
 import TerraformImg from "../../../public/technologies/Terraform.png?react"
 import WolfiImg from "../../../public/technologies/Wolfi.png?react"
+import GcpImg from "../../../public/technologies/GCP.png?react"
 
 class ChainguardContent extends ContentPage{
     compLogo = Logo;
@@ -22,7 +23,7 @@ class ChainguardContent extends ContentPage{
     that the images still functioned identical to their upstream counterparts while having 
     no vulnerabilities and smaller image size.
     `
-    technologies = [DockerImg, TerraformImg, WolfiImg];
+    technologies = [DockerImg, TerraformImg, WolfiImg, GcpImg];
 }
 
 export default ChainguardContent;
