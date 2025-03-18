@@ -2,6 +2,7 @@
 import NavigationBar from "@/components/NavigationBar";
 import { Component } from "react";
 import '../../styling/styles.css';
+import LuminousContent from "@/components/companies/LuminousContent";
 
 class Luminous extends Component {
 
@@ -9,8 +10,7 @@ class Luminous extends Component {
         return (
             <div>
                 <NavigationBar />
-                <h1>Test Luminous</h1>
-                <p>This is a test for the home page</p>
+                <LuminousContent/>
             </div>
         );
     }
