@@ -1,7 +1,7 @@
-const { default: ContentPage } = require("../ContentPage");
+const { default: CompanyContent } = require("../CompanyContent");
 import Logo from "../../../public/companies/EOPTIC.svg?react"
 
-class EopticContent extends ContentPage{
+class EopticContent extends CompanyContent{
     compLogo = Logo;
     content = "Chainguard is a blah blah blah"
     technologies = [];

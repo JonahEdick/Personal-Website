@@ -1,11 +1,11 @@
-const { default: ContentPage } = require("../ContentPage");
+const { default: CompanyContent } = require("../CompanyContent");
 import Logo from "../../../public/companies/Chainguard.webp?react"
 import DockerImg from "../../../public/technologies/Docker.png?react"
 import TerraformImg from "../../../public/technologies/Terraform.png?react"
 import WolfiImg from "../../../public/technologies/Wolfi.png?react"
 import GcpImg from "../../../public/technologies/GCP.png?react"
 
-class ChainguardContent extends ContentPage{
+class ChainguardContent extends CompanyContent{
     compLogo = Logo;
     compInfo = `
     Chainguard Inc. is a company focused on enhancing software supply chain security.

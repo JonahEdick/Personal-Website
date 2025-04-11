@@ -1,7 +1,7 @@
-const { default: ContentPage } = require("../ContentPage");
+const { default: CompanyContent } = require("../CompanyContent");
 import Logo from "../../../public/companies/Luminous.svg?react"
 
-class LuminousContent extends ContentPage{
+class LuminousContent extends CompanyContent{
     compLogo = Logo;
     compInfo = `
     Chainguard Inc. is a company focused on enhancing software supply chain security.

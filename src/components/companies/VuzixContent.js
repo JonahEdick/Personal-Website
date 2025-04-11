@@ -1,4 +1,4 @@
-const { default: ContentPage } = require("../ContentPage");
+const { default: CompanyContent } = require("../CompanyContent");
 import Logo from "../../../public/companies/Vuzix.webp?react"
 import NodeImg from "../../../public/technologies/NodeJS.webp?react"
 import SwaggerImg from "../../../public/technologies/Swagger.png?react"
@@ -6,7 +6,7 @@ import AzureImg from "../../../public/technologies/Azure.png?react"
 import JiraImg from "../../../public/technologies/Jira.svg?react"
 import TypescriptImg from "../../../public/technologies/Typescript.png?react"
 
-class VuzixContent extends ContentPage{
+class VuzixContent extends CompanyContent{
     compLogo = Logo;
     compInfo = `
     Vuzix Corporation is a leading supplier of smart glasses and augmented reality (AR) 

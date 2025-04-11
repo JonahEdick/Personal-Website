@@ -7,7 +7,7 @@ import { Col } from "react-bootstrap";
 import Logo from "../../public/logo.svg?react";
 import Image from 'next/image';
 
-class ContentPage extends Component {
+class CompanyContent extends Component {
     compLogo = Logo;
     compInfo = `
     Lorem ipsum odor amet, consectetuer adipiscing elit.
@@ -144,4 +144,4 @@ class ContentPage extends Component {
     }
 }
 
-export default ContentPage;
+export default CompanyContent;
